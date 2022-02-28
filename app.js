@@ -15,7 +15,7 @@ app.use(function (req, res, next) {
 });
 
 app.get('/', function (req, res) {
-    res.json({ message: 'Prueba' + process.env.ENVIRONMENT_TEST, mesageDev: process.env.ENVIRONMENT == 'dev' ? process.env.ENVIRONMENT_TEST : process.env.ENVIRONMENT_PRODUCTION });
+    res.json({ message: 'Prueba: ' + process.env.ENVIRONMENT_TEST, mesageDev: process.env.ENVIRONMENT == 'dev' ? process.env.ENVIRONMENT_TEST : process.env.ENVIRONMENT_PRODUCTION });
 });
 
 app.get('/message-test', function (req, res) {
