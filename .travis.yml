@@ -1,0 +1,9 @@
+language: node_js
+nodejs:
+  - 14.17.1
+install:
+  - npm install
+env:
+  - ENVIRONMENT=production
+script:
+  - npm start
